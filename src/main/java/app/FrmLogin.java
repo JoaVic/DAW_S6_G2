@@ -90,7 +90,7 @@ public class FrmLogin extends JFrame {
 	
 	void registrar() {
 		String usuario = leerUsuario();
-		String clave = leerClave();
+		String clave = txtClave.getText();
 		
 		if(usuario == null || clave ==null) {
 			return ;
@@ -119,10 +119,6 @@ public class FrmLogin extends JFrame {
 		
 		manager.close();
 		
-	}
-
-	private String leerClave() {
-		return null;
 	}
 
 	private String leerUsuario() {
